@@ -47,7 +47,8 @@ router.get('/centrosMed',authCentrosMed, function(req, res) {
 });
 
 //obtiene todas las muestras por cedula
-router.get('/muestrasPorPaciente',authPacienteRuta, function(req, res) {
+// router.get('/muestrasPorPaciente',authPacienteRuta, function(req, res) {
+router.get('/muestrasPorPaciente', function(req, res) {
     console.log('I received a get request');
     Muestra.find({
         cedula: req.session["cedula"]
