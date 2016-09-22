@@ -78,7 +78,8 @@ router.use('/paciente',authPacienteVista, require('./paciente.js'))
 
 router.use('/laboratorios',authMuestrasRuta,require('./APIRest/laboratorios.js'));
 router.use('/pacientes', require('./APIRest/pacientes.js'));
-router.use('/muestras',authMuestrasRuta, require('./APIRest/muestras.js'));
+// router.use('/muestras',authMuestrasRuta, require('./APIRest/muestras.js'));
+router.use('/muestras', require('./APIRest/muestras.js'));
 
 
 
