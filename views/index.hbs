@@ -182,7 +182,9 @@
             e.preventDefault();
             var url = "/login";
             var data = $("#login").serialize();
-
+            console.log("data a enviar");
+            console.log(data);
+            alert('msg');
             $.ajax({
                 type: 'POST',
                 url: url,
